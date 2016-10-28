@@ -44,3 +44,13 @@ docker run --name mvc-example -p 8080:8080 adoptajsr/javaee8-mvc
 * CSRF
 * Redirect and RedirectScoped
 * MVC Context
+
+== Using Jenkins
+
+. Fork this repo
+. Download this https://github.com/jenkinsperu/docker-env/tree/docker[repo] and follow the steps
+. Create a new Pipeline Job
+. Choose 'Pipeline script from SCM'
+. Enter `https://github.com/jenkinsperu/javaee8-mvc.git`
+. Modify `eddumelendez` in Jenkinsfile by your https://hub.docker.com/[docker hub]'s username
+. Create 'edsonchavez' user in Jenkins
